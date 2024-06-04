@@ -8,7 +8,7 @@ function redirigirSegunUbicacion() {
 
             // AQUÍ PUEDES AÑADIR CONDICIONES PARA DETERMINAR LA REDIRECCIÓN BASADA EN LA UBICACIÓN
             // Por ejemplo, redirigir si la latitud está dentro de un rango específico
-            if (latitud > -28.9 && latitud < 34 && longitud > -65.3 && longitud < -70.5) {
+            if (latitud > -20.9 && latitud < 40 && longitud > -50.3 && longitud < -90.5) {
                 // Redirigir si la ubicación está dentro de un rango específico (Nueva York)
                 window.location.href = '/pages/suc1.html';
             } else {
