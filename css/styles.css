@@ -1,3 +1,6 @@
+html, body {
+  overflow: hidden;
+}
 .contenedor {
     display: flex;
     justify-content: center;
@@ -5,15 +8,56 @@
     height: 100vh;
     background-color: rgb(206, 7, 7);
 }
-.portada {
-  color: rgb(255, 255, 255);
-  font-size:smaller;
+.texto_portada {
+  font-size:small;
+  color: white;
+  margin-left: 50px;
 }
 .logo {
   width: 380px;
   height: 300px;
- font-style: italic;
- font-size: xx-small;
- color: rgb(255, 255, 255);
- justify-items: center;
+}
+ 
+@media only screen and (max-width: 480px) and (max-height: 800px) {
+  /* Estilos específicos para celulares */
+  .contenedor {
+    width: 100vw;
+    height: 100vh;
+  }
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
+  .texto_portada{
+    margin-left: 15px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) and (min-height: 800px) and (max-height: 1024px) {
+  /* Estilos específicos para celulares de tamaño mediano */
+  .contenedor {
+    width: 100vw; 
+    height: 100vh;
+  }
+  .logo {
+    width: 250px;
+    height: 250px;
+  }
+  .texto_portada{
+    margin-left: 20px;
+    font-size: smaller;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 768px) and (max-height: 1024px) {
+  /* Estilos específicos para celulares grandes y tablets */
+  .contenedor {
+    width: 100vw;   
+    height: 100vh;
+  }
+  .logo {
+    width: 300px;
+    height: 300px;
+  }
+  .texto_portada {
+    margin-left: 30px;
+  }
 }
