@@ -1,0 +1,19 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(206, 7, 7);
+}
+.portada {
+  color: rgb(255, 255, 255);
+  font-size:smaller;
+}
+.logo {
+  width: 380px;
+  height: 300px;
+ font-style: italic;
+ font-size: xx-small;
+ color: rgb(255, 255, 255);
+ justify-items: center;
+}
